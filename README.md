@@ -36,6 +36,8 @@ The model explores how telomeres fluctuate between these states depending on cel
 4. `T → LB` (t-circle, breakage)  
 5. `T → LR` (t-loop opening, C-circle formation)  
 
+![Graph describing nodes relationships](./Nodes.svg)
+
 ### Cell Cycle Parameters
 - **G1**: ~1 hour  
 - **S**: ~5 hours  
