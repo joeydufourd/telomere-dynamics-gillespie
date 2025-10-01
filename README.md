@@ -48,6 +48,24 @@ Different (arbitrary) reaction rate constants are applied in each phase to refle
 
 ---
 
+## Contributing
+
+- Feel free to open issues for bug reports or feature requests.  
+- For enhancements, fork the repo, make your changes, and submit a pull request.  
+
+---
+
+## License
+
+This project is licensed under the **MIT License** — see [LICENSE](./LICENSE) for details.
+
+---
+
+## Acknowledgements / Citation
+
+If you use this code in a publication or a pipeline, please cite the original thesis (Joey Dufourd ; or this GitHub repository).  
+Include author name, year, and DOI (or link).
+
 ## Installation
 
 Clone the repository and install required dependencies:
