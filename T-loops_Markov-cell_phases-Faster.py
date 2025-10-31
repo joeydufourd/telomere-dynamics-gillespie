@@ -7,14 +7,14 @@ from numba.typed import List
 from numba import prange
 
 # Initialize species counts: [LB, LR, T] ; LB is Linear Blunt telomeres, LR Linear resected Telomeres, T Telomere-loops
-X = numpy.array([46, 46, 0], dtype=numpy.float64)
+X = numpy.array([46, 46, 0], dtype=numpy.float64) #forced numba dtype
 
 # Parameters
-start = time.time()
+#start = time.time()
 numpy.random.seed(0)
 numspecies = 3 #LB/LR/T
 numreactions = 5 #Detailed in smatrix
-numsim = 5 #number of simulations (=number of cells simulated)
+numsim = 2 #number of simulations (=number of cells simulated)
 tmax = (3600 * 8) * 2  # Here we use ESCs cell cycle time (8 hours) to render 2 cell cycles
 G1_len = 3600 #G1 is approx 1 hour in ESCs
 S_len  = 5*3600 #S is approx 5 hours in ESCs
@@ -167,8 +167,8 @@ def programme(X, numsim):
         plt.ylim(0, 100)
         plt.xlim(0,tmax)
         plt.legend()
-        #plt.show()
-    end = time.time() # njit improved Execution time: 102.9640 seconds, 8 times improvement (5sim) ; parallel improves to Execution time: 70.7025 seconds (5sim)
+        plt.show()
+    #end = time.time() # njit improved Execution time: 102.9640 seconds, 8 times improvement (5sim) ; parallel improves to Execution time: 70.7025 seconds (5sim)
     print(f"Execution time: {end - start:.4f} seconds")
 
 # Run !
